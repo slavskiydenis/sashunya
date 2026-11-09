@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f8ff">
+  <meta name="description" content="Школа приключений Сашуни: учимся, играем и открываем новое!">
+  <title>Школа приключений Сашуни</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="На главную">
+      <span class="brand-mark">✦</span>
+      <span>Школа <b>Сашуни</b></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#subjects">Предметы</a>
+      <a href="#how">Как заниматься</a>
+      <a href="#achievements">Мои успехи</a>
+    </nav>
+    <a class="header-button" href="#subjects">Начать учиться <span>→</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sparkle">✦</span> ТВОЯ ТЕРРИТОРИЯ ОТКРЫТИЙ</div>
+        <h1>Привет, Сашуня!<br><span>Готова к приключениям?</span></h1>
+        <p class="hero-text">Здесь математика становится интересной, правила легко запоминаются, а каждый новый день приносит маленькие победы!</p>
+        <a class="primary-button" href="#subjects">Отправиться учиться <span>→</span></a>
+        <div class="hero-note"><span class="note-icon">★</span> Учимся, играем и растём каждый день</div>
+      </div>
+      <div class="hero-art">
+        <div class="art-blob"></div>
+        <div class="art-sun">☀</div>
+        <img src="images/sasha.png" alt="Мультяшная Саша в короне на лесной дорожке" class="sasha-hero">
+        <div class="floating-card card-top"><span>🌟</span><b>У тебя всё получится!</b></div>
+        <div class="floating-card card-bottom"><span>🎒</span><b>Вперёд к открытиям!</b></div>
+      </div>
+    </section>
+
+    <section class="subjects section" id="subjects">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">ВЫБИРАЙ СВОЁ ПРИКЛЮЧЕНИЕ</div>
+          <h2>Чему будем учиться?</h2>
+        </div>
+        <p>Выбирай предмет и отправляйся<br class="desktop-only"> навстречу новым знаниям.</p>
+      </div>
+      <div class="subject-grid">
+        <a class="subject-card math" href="#" data-subject="Математика">
+          <div class="subject-icon">🔢</div><span class="subject-tag">Считаем и решаем</span>
+          <h3>Математика</h3><p>Числа, примеры, задачи и весёлые головоломки.</p><span class="card-arrow">→</span>
+        </a>
+        <a class="subject-card russian" href="#" data-subject="Русский язык">
+          <div class="subject-icon">📚</div><span class="subject-tag">Читаем и пишем</span>
+          <h3>Русский язык</h3><p>Слова, правила, грамотность и маленькие диктанты.</p><span class="card-arrow">→</span>
+        </a>
+        <a class="subject-card world" href="#" data-subject="Окружающий мир">
+          <div class="subject-icon">🌿</div><span class="subject-tag">Исследуем мир</span>
+          <h3>Окружающий мир</h3><p>Животные, растения, природа и удивительные открытия.</p><span class="card-arrow">→</span>
+        </a>
+        <a class="subject-card english" href="#" data-subject="Английский язык">
+          <div class="subject-icon">🔤</div><span class="subject-tag">Открываем языки</span>
+          <h3>Английский</h3><p>Новые слова, простые фразы и игровые упражнения.</p><span class="card-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="how section" id="how">
+      <div class="how-illustration"><div class="big-star">✦</div><div class="book-stack">📖</div><div class="tiny-star">✧</div></div>
+      <div class="how-copy">
+        <div class="eyebrow">МАЛЕНЬКИЕ ШАГИ — БОЛЬШИЕ ПОБЕДЫ</div>
+        <h2>Здесь можно учиться<br>в своём темпе</h2>
+        <p>Сначала знакомимся с темой, затем смотрим примеры и пробуем выполнить задания. Ошибаться не страшно: каждая попытка помогает стать увереннее!</p>
+        <div class="steps">
+          <div><span>1</span><b>Узнай</b><small>Прочитай короткое объяснение</small></div>
+          <div><span>2</span><b>Попробуй</b><small>Выполни несколько заданий</small></div>
+          <div><span>3</span><b>Порадуйся</b><small>Отметь свою новую победу</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="achievement section" id="achievements">
+      <div class="achievement-icon">🏆</div>
+      <div><div class="eyebrow">ТВОИ УСПЕХИ</div><h2>Каждое усилие важно!</h2><p>Выполняй задания, собирай звёздочки и наблюдай, как растут твои знания.</p></div>
+      <div class="stars" aria-label="Звёздочки за успехи"><span>☆</span><span>☆</span><span>☆</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">✦</span><span>Школа <b>Сашуни</b></span></a>
+    <p>С любопытством к знаниям и улыбкой каждый день 💛</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
